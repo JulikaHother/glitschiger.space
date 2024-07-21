@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'TorxItalic';
+  font-style: normal;
+  src: url("fonts/ABCConnect-TorxItalic-Trial.woff") format("woff"), url("fonts/ABCConnect-TorxItalic-Trial.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'CirrusCumulus';
+  font-style: normal;
+  src: url("fonts/CirrusCumulus.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ROMCondensed";
+  src: url("/fonts/ABCROMCondensed-Light-Trial.woff") format("woff"), url("/fonts/ABCROMCondensed-Light-Trial.woff2") format("woff2");
+  font-weight: normal;
+}
+
+body {
+  overflow: hidden;
+  background: #bb8641;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  cursor: default;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+.hintergrund {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  mix-blend-mode: difference;
+  position: absolute;
+  z-index: 100;
+}
+
+.title {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  position: absolute;
+  inset: 0;
+  color: rgb(156, 185, 194);
+  font-size: 1.7rem;
+  text-align: right;
+  line-height: 100%;
+  padding: 10px;
+}
+
+.legende {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  position: absolute;
+  inset: 0;
+  color: rgb(156, 185, 194);
+  font-size: 1rem;
+  text-align: right;
+  line-height: 100%;
+  padding: 10px;
+}
+
+.sound {
+  color: #332340;
+  z-index: 1000;
+}
+
+.story {
+  color: #488241;
+  z-index: 1000;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 50vh 50vh;
+  grid-template-areas:
+    "item1 item2"
+    "item3 item3";
+  pointer-events: auto;
+
+}
+
+.grid-item {
+  position: relative;
+  background-color: #002fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5em;
+  border: solid;
+  border-radius: 5px;
+  border-color: #002fff;
+  pointer-events: auto;
+}
+
+#item1 {
+  grid-area: item1;
+}
+
+#item2 {
+  grid-area: item2;
+}
+
+#item3 {
+  grid-area: item3;
+}
+
+.türkis {
+  background-color: #92cdcf;
+}
+
+.kreis {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 10000;
+  width: 70px;
+  height: 70px;
+  pointer-events: auto;
+  cursor: pointer !important;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+
+
+.geschichte {
+  background-color: #488241;
+}
+
+.ambient {
+  background-color: #332340;
+  width: 50px;
+  height: 50px;
+}
+
+
+p {
+  font-family: 'TorxItalic';
+}
+
+/* .hintergrund {
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+} */
+
+/* .hintergrundvideo {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  mix-blend-mode: difference;
+} */
